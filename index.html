@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header>
+
+        <div id="caixa-titulo">
+            <h1 id="titulo">Roma Encoder</h1>
+        </div>
+
+        <div id="texto-aprensetacao">
+            <p id="texto">TEXTO</p>
+        </div>
+    </header>
+
+
+    <main>
+        <div class="caixa-texto">
+            
+            <textarea id="texto-entrada" required></textarea>
+            
+        </div>
+        
+        <select class="selecao">
+            
+            <option id="cesar" selected>Cesar</option>
+            <option id="base64">Base64</option>
+
+        </select>
+
+        <div id="caixa-escolha">
+            
+            <input name="escolha" type="radio" value="Codificar" id="codificar">Codificar
+            <input name="escolha" type="radio" value="Decodificar" id="decodificar">Decodificar
+
+        </div>
+
+        <div class="confirma-btn">
+
+            <button id="codificar-btn">Codificar Mensagem!</button>
+            <button id="decodificar-btn">Decodificar Mensagem!</button>
+
+        </div>
+
+        
+        <textarea id="texto-entrada" readonly></textarea>
+
+    </main>
+    
+    <script src="/main.js"></script>
+
+</body>
+</html>
