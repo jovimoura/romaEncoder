@@ -31,38 +31,46 @@
         <select id="selecao">
             
             <option value="cesar" id="cesar" selected>Cesar</option>
-            <option value="base64" id="base64">Base64</option>
+            <option value="base" id="base64">Base64</option>
 
         </select>
 
+        <div id="caixa-chave">
+            
+            <label id="legenda" for="chave">Chave</label>
+            <input name = "escolha" type = "text" value = "" id= "chave">
+
+        </div>
+
         <div id="caixa-escolha">
             
-            <input name="escolha" type="radio" value="Codificar" id="codificar">Codificar
-            <input name="escolha" type="radio" value="Decodificar" id="decodificar">Decodificar
-
+            <input name = "escolha" type ="radio" value = "Codificar" id = "codified">Codificar
+            <input name = "escolha" type ="radio" value = "Decodificar" id = "decodified">Decodificar
+            
         </div>
 
         <div class="confirma-btn">
 
-            <button id="codificar-btn" class="botao">Codificar Mensagem!</button>
-            <button id="decodificar-btn" class="botao">Decodificar Mensagem!</button>
+            <button id = "codificar-btn" >Codificar Mensagem!</button>
+            <button id = "decodificar-btn" >Decodificar Mensagem!</button>
 
         </div>
 
-        <div id="caixa-saida">
+        <div id = "caixa-saida">
            
-            <textarea id="texto-saida" readonly></textarea>
+            <textarea id = "texto-saida" readonly></textarea>
 
         </div>
         
-        <div id="caixa-btn">
+        <div id = "caixa-btn">
             
-            <button id="btn-apagar" class="botao">Apagar</button>
+            <button id = "btn-apagar" class = "botao">Apagar</button>
 
         </div>
     </main>
     
     <script src="main.js"></script>
+    <script src="./cesar.js"></script>
 
 </body>
 </html>
