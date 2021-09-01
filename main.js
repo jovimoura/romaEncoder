@@ -24,7 +24,10 @@ let botaoApagar = document.getElementById('btn-apagar');
 select.addEventListener('change',()=>{
     if(select.value != 'cesar'){
     caixaChave.classList.add('none');
-}
+    }
+    if(select.value == 'cesar'){
+        caixaChave.classList.remove('none')
+    }
 });
 
                         //Cifra de Cesar
@@ -89,19 +92,21 @@ decodified.addEventListener('change',()=>{
 });
 
 codeBtn.addEventListener('click',()=>{
-    if(selecao.value === 'base64'){
+    console.log('funciona2')
+    if(select.value == 'cesar'){
+        textoSaida.value = codificar(textoEntrada.value,parseInt(chave.value));
+    }else if(select.value != 'cesar'){
         textoSaida.value = btoa(textoEntrada.value);
-    }else{
-        codificar(textoEntrada.value,parseInt(chave.value))
     }
         
 });
 
 decodBtn.addEventListener('click',()=>{
-    if(selecao.value === 'base64'){
-        textoSaida.value = atob(textoEntrada.value)
+    console.log('funciona1')
+    if(select.value != 'cesar'){
+        textoSaida.value = atob(textoEntrada.value);
     }else{
-        decodificar(textoEntrada.value,parseInt(chave.value));
+        textoSaida.value = decodificar(textoEntrada.value,parseInt(chave.value));
     }
         
 });
