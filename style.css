@@ -28,8 +28,7 @@ input {
 }
 
 #texto {
-    display: flex;
-    justify-content: center;
+    text-align: center;
     border: 5px solid rgb(47, 69, 79);
     border-radius: 8px;
     margin-left: 18%;
