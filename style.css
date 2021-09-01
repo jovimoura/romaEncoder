@@ -1,5 +1,160 @@
+body {
+    background: url('./imagem/copia.jpg');
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    font-size: 100%;
+}
+
+#legenda {
+    font-size: 20px;
+    font-family: 'Antic', sans-serif;;
+}
 
 
+#titulo {
+    color: cyan;
+    font-family: 'Aclonica', sans-serif;
+}
+
+#texto-apresentacao {
+    border: 5px solid rgb(47, 69, 79);
+    font-family: 'Antic', sans-serif;
+}
+
+#texto {
+    display: flex;
+    justify-content: center;
+    border: 5px solid rgb(47, 69, 79);
+    border-radius: 8px;
+    margin-left: 18%;
+    margin-right: 18%;
+    background-color: rgb(66, 201, 126);
+    opacity: 0.73;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: 'Antic', sans-serif;
+    
+
+    
+}
+
+#caixa-texto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#box{
+    
+    border: 5px solid rgb(47, 69, 79);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin-left: 18%;
+    margin-right: 18%;
+    padding: 2%;
+
+    background-color: rgb(66, 201, 126);
+    opacity: 0.73;
+
+    
+    
+}
+
+#subtitulo{
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'Aclonica', sans-serif;
+}
+
+#texto-entrada, #texto-saida {
+    margin: 1%;
+    margin-top: 10px;
+    font-size: 160%;
+    background-color: rgb(173, 233, 233);
+    border: 3.5px solid rgb(47, 69, 79);
+    border-radius: 8px;
+    font-family: 'Antic', sans-serif;
+
+}
+
+#selecao {
+    margin: 1%;
+    background-color: rgb(173, 233, 233);
+    border: 3.5px solid rgb(47, 69, 79);
+    border-radius: 8px;
+    font-size: 120%;
+    font-family: 'Antic', sans-serif;
+}
+
+
+
+
+#caixa-chave {
+    margin: 1%;
+    margin-right: 0;
+    margin-left: 0;
+
+}
+
+#chave {
+    background-color: rgb(173, 233, 233);
+    font-family: 'Antic', sans-serif;
+}
+
+input[type='radio']{
+    color: red
+}
+
+#caixa-escolha {
+    margin: 1%;
+    margin-right: 0;
+    margin-left: 0;
+
+}
+
+#codificar-btn, #decodificar-btn {
+    border: 3.5px solid rgb(47, 69, 79);
+    border-radius: 15px;
+    font-size: 96%;
+    background-color: rgb(173, 233, 233);
+    font-family: 'Antic', sans-serif;
+}
+
+
+
+
+#confirma-button {
+    margin: 1%;
+    margin-bottom: 10px;
+    margin-right: 0;
+    margin-left: 0;
+    font-family: 'Antic', sans-serif;
+
+}
+
+
+#btn-apagar {
+    border: 3.5px solid rgb(47, 69, 79);
+    border-radius: 15px;
+    font-size: 110%;
+    padding: 8%;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: rgb(173, 233, 233);
+    font-family: 'Antic', sans-serif;
+}
 
 .none {
     display: none;
