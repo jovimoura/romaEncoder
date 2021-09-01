@@ -5,8 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Decodificador</title>
+    
+    <link rel="stylesheet" href="./style.css">
 
-    <link rel="stylesheet" href="style.css">
+
+    <!--link da font do título do game-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+
+    <!--link da font dos textos do game-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antic&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -15,62 +26,66 @@
             <h1 id="titulo">Roma Encoder</h1>
         </div>
 
-        <div id="texto-aprensetacao">
-            <p id="texto">TEXTO</p>
-        </div>
+        
     </header>
-
+        
+    <div id="texto-aprensetacao">
+        <p id="texto">TEXTO</p>
+    </div>
 
     <main>
-        <div class="caixa-texto">
-            
-            <textarea id="texto-entrada" required></textarea>
-            
-        </div>
+        <div id="box">
         
-        <select id="selecao">
+            <div class="caixa-texto">
+                <h2 id="subtitulo">Digite aqui</h2>
+                <textarea id="texto-entrada" required></textarea>
+                
+            </div>
             
-            <option value="cesar" id="cesar" selected>Cesar</option>
-            <option value="base" id="base64">Base64</option>
+            <select id="selecao">
+                
+                <option value="cesar" id="cesar" selected>Cesar</option>
+                <option value="base" id="base64">Base64</option>
 
-        </select>
+            </select>
 
-        <div id="caixa-chave">
+            <div id="caixa-chave">
+                
+                <label id="legenda" for="chave">Chave:</label>
+                <input name = "escolha" type = "text" value = "" id= "chave">
+
+            </div>
+
+            <div id="caixa-escolha">
+                
+                <input name = "escolha" type ="radio" value = "Codificar" id = "codified"><label id="legenda">Codificar</label>
+                <input name = "escolha" type ="radio" value = "Decodificar" id = "decodified"><label id="legenda">Decodificar</label>
+                
+            </div>
+
+            <div class="confirma-btn">
+
+                <button id = "codificar-btn" >Codificar Mensagem!</button>
+                <button id = "decodificar-btn" >Decodificar Mensagem!</button>
+
+            </div>
+
+            <div id = "caixa-saida">
             
-            <label id="legenda" for="chave">Chave</label>
-            <input name = "escolha" type = "text" value = "" id= "chave">
+                <textarea id = "texto-saida" readonly></textarea>
 
-        </div>
-
-        <div id="caixa-escolha">
+            </div>
             
-            <input name = "escolha" type ="radio" value = "Codificar" id = "codified">Codificar
-            <input name = "escolha" type ="radio" value = "Decodificar" id = "decodified">Decodificar
+            <div id = "caixa-btn">
+                
+                <button id = "btn-apagar" class = "botao">Apagar</button>
+
             
-        </div>
-
-        <div class="confirma-btn">
-
-            <button id = "codificar-btn" >Codificar Mensagem!</button>
-            <button id = "decodificar-btn" >Decodificar Mensagem!</button>
-
-        </div>
-
-        <div id = "caixa-saida">
-           
-            <textarea id = "texto-saida" readonly></textarea>
-
-        </div>
-        
-        <div id = "caixa-btn">
-            
-            <button id = "btn-apagar" class = "botao">Apagar</button>
-
+            </div>
         </div>
     </main>
     
     <script src="main.js"></script>
-    <script src="./cesar.js"></script>
 
 </body>
 </html>
