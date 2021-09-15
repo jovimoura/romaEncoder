@@ -1,5 +1,5 @@
 body {
-    background: url('./imagem/fundo.jpg');
+    background: url('../imagem/fundo.jpg');
 }
 
 header {
@@ -20,6 +20,10 @@ input {
 #titulo {
     color: cyan;
     font-family: 'Aclonica', sans-serif;
+    font-weight: bold;
+    font-size: 2.8rem;
+    margin-top: 1rem;
+    margin-bottom: .7rem;
 }
 
 #texto-apresentacao {
@@ -75,6 +79,8 @@ input {
     margin-top: 0;
     margin-bottom: 0;
     font-family: 'Aclonica', sans-serif;
+    font-size: 1.7rem;
+    font-weight: bold;
 }
 
 #texto-entrada, #texto-saida {
@@ -129,6 +135,14 @@ input[type='radio']{
     font-size: 96%;
     background-color: rgb(173, 233, 233);
     font-family: 'Antic', sans-serif;
+}
+
+.botao:hover {
+    border: 4px solid cyan;
+}
+
+.botao:active {
+    background-color: white;
 }
 
 
